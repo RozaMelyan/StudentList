@@ -138,3 +138,16 @@ $(document).ready(function () {
 })
 
 
+$(document).ready(function () {
+    $('#getBtn').click(function () {
+        $.ajax({
+            url: "http://127.0.0.1:3000/students",
+            success: function (returnData) {
+                drowResponseDataToPage(returnData);
+            },
+            error: function (xhr, status, error) {
+                alert('Something went wrong ' + xhr.status + ' ' + xhr.statusText);
+            }
+        })
+    })
+})
