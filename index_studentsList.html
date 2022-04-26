@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_list.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Students list</title>
+</head>
+<body>
+  <nav>
+    <div class="heading">
+      <h1 style="color: white; text-align: center; padding: 4px;"> ԲԵՐԴԻ ԹԻՎ 1 ՀԻՄՆԱԿԱՆ ԴՊՐՈՑ</h1> 
+    </div>
+    <div class="links">
+      <h3 style="color: cornsilk; text-align: center; padding: 2px;">ՄԵՐ ՍՈՎՈՐՈՂՆԵՐԸ</h3>
+    </div>
+  </nav>
+  <div class="form">
+    <div id="inputConteiner">
+      <div class="modal-container" id="modal-container">
+        <div class="modal">
+          <h6>Խմբագրել սովորողների տվյալները</h6>
+          <input type="text" id="first-name" placeholder="Անուն:" requiered>
+          <input type="text" id="last-name" placeholder="Ազգանուն:" requiered>
+          <input type="email" id="e-mail" placeholder="Էլ. փոստի հասցե:" requiered>
+          <input type="tel" id="t-phone" placeholder="Հեռախոսահամար:" requiered>
+          <input type="number" id="a-ge" placeholder="Տարիք:" requiered>
+          <button id="close">Հաստատել</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="studentsData">
+    <div class="students_list_in_page">
+        <ul id="studentsList"></ul>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
